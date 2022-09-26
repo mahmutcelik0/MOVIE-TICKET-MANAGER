@@ -1,0 +1,109 @@
+.label{
+    -fx-text-fill : #CA3E47;
+    -fx-font-weight : bold;
+}
+
+
+.text-field{
+    -fx-text-fill : white;
+    -fx-background-color : #525252;
+    -fx-background-radius : 20px
+
+}
+
+
+#login{
+    -fx-background-color :#CA3E47;
+}
+.button{
+    -fx-background-radius : 15px;
+    -fx-background-color :  #525252;
+    -fx-text-fill : lightgray;
+    -fx-font-size :18px;
+    -fx-font-weight : bold;
+}
+
+
+.button:hover{
+    -fx-background-color : lightgray;
+    -fx-text-fill :  #313131;
+    -fx-font-weight : bold;
+}
+#login:hover{
+    -fx-background-color: lightgray;
+    -fx-text-fill :  #313131;
+    -fx-font-weight : bold;
+}
+.radio-button{
+    -fx-text-fill : gray;
+}
+
+#adminAndUserLabel{
+    -fx-background-radius : 15px;
+    -fx-background-color :  #525252;
+    -fx-text-fill : #CA3E47;
+    -fx-font-weight : bold;
+    -fx-font-size :18px;
+    -fx-padding :  8 20;
+}
+#resetButton{
+    -fx-background-color :#CA3E47;
+}
+#resetButton:hover{
+    -fx-background-color: lightgray;
+    -fx-text-fill :  #313131;
+    -fx-font-weight : bold;
+}
+#admin{
+    -fx-background-color :#CA3E47;
+}
+#admin:hover{
+    -fx-background-color: lightgray;
+    -fx-text-fill :  #313131;
+    -fx-font-weight : bold;
+}
+#logoutButton{
+    -fx-background-color :#CA3E47;
+}
+
+#logoutButton:hover{
+    -fx-background-color: lightgray;
+    -fx-text-fill :  #313131;
+    -fx-font-weight : bold;
+}
+
+#viewBooking{
+    -fx-font-size : 15px;
+}
+#insertMovie{
+    -fx-font-size : 15px;
+}
+#scheduleShows{
+    -fx-font-size : 15px;
+}
+#alterPrices{
+    -fx-font-size : 15px;
+}
+
+
+
+
+#title{
+    -fx-font-size : 20px;
+    -fx-text-fill : white;
+}
+
+
+.date-picker{
+    -fx-background-color : #525252;
+    -fx-border-radius : 0px;
+}
+
+.date-picker > .arrow-button {
+    -fx-background-color : #525252;
+}
+
+.date-picker > .arrow-button > .arrow{
+    -fx-background-color : white;
+}
+

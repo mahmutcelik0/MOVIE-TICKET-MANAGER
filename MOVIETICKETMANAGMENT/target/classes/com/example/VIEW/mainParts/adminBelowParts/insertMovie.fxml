@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="448.0" prefWidth="559.0" style="-fx-background-color: #313131;" stylesheets="@../../../CSS/project.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CONTROLLER.signUpandLoginController.insertMovieController">
+   <children>
+      <Separator layoutX="86.0" layoutY="14.0" prefHeight="10.0" prefWidth="421.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <GridPane alignment="CENTER" layoutX="207.0" layoutY="35.0" prefHeight="412.0" prefWidth="459.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="66.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <DatePicker fx:id="premiereDatePicker" minWidth="250.0" promptText="PREMIERE DATE" GridPane.rowIndex="5" />
+            <Label fx:id="title" text="MOVIE DETAILS" />
+            <TextField fx:id="nameField" alignment="CENTER" maxWidth="250.0" promptText="NAME" GridPane.rowIndex="1" />
+            <TextField fx:id="lengthField" alignment="CENTER" maxWidth="250.0" promptText="LENGTH (in min)" GridPane.rowIndex="2" />
+            <TextField fx:id="languageField" alignment="CENTER" maxWidth="250.0" promptText="AVAIBLE LANGUAGES" GridPane.rowIndex="3" />
+            <TextField fx:id="typeField" alignment="CENTER" maxWidth="250.0" promptText="Types Avaible(2D,3D,4DX) seperate by space" GridPane.rowIndex="4" />
+            <DatePicker fx:id="lastDatePicker" minWidth="250.0" promptText="LAST DATE in THEATRE" GridPane.rowIndex="6" />
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+               <children>
+                  <Label fx:id="warningMessage" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="256.0" textAlignment="CENTER" />
+                  <Button alignment="CENTER" mnemonicParsing="false" onMouseReleased="#toAddDatabase" style="-fx-background-color: #29435C;" text="Button" />
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
